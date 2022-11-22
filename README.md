@@ -1,6 +1,7 @@
 # Butilca Rares
 
 Task:
+
     This is an example of an implementation for a Map-Reduce program that analyzes a set of files
     and counts the powers for a set of exponents.
 
@@ -14,6 +15,7 @@ Task:
     unique apparitions.
 
 Generic functions:
+
     In map-reducer.h you will find a generic implementation for the mapper and reducer functions.
     The mapper maps into lists of values that the reducers will process. Note that the mapper
     function always returns lists, thus if the implementation needs the function for a file to
@@ -22,6 +24,7 @@ Generic functions:
     whether their reducer will work on the whole map or only on one key.
 
 Input:
+
     A file that contains the number of files to be processed on the first line and the names of
     those files on separate lines.
 
@@ -72,6 +75,7 @@ Input:
     1
 
 Output:
+
     Output will be written in files with the name out<exponent>.txt.
 
     example:
@@ -88,6 +92,7 @@ Output:
     2
 
 Run:
+
     The program will run with the command ./powers <mapper count> <reducer count> <main file name>.
 
     example:
@@ -95,4 +100,5 @@ Run:
     threads and 4 reducer threads.
 
 References:
+
     Map-reduce: https://en.wikipedia.org/wiki/MapReduce
